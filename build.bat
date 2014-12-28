@@ -10,6 +10,7 @@ REM Check the versions.
 REM =============================
 REM mvn --version
 
+
 REM =============================
 REM Get a list of all template projects. 
 REM =============================
@@ -27,6 +28,8 @@ REM call mvn archetype:generate
 REM =============================
 REM Run the main class. 
 REM =============================
-mvn -q exec:java -Dexec.mainClass="funngames.App"
+ECHO.
+call mvn -q exec:java -Dexec.mainClass="funngames.App"
 
+ECHO.
 pause
