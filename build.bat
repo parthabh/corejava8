@@ -28,8 +28,15 @@ REM call mvn archetype:generate
 REM =============================
 REM Run the main class. 
 REM =============================
-ECHO.
-call mvn -q exec:java -Dexec.mainClass="funngames.App"
+REM ECHO.
+REM call mvn -q exec:java -Dexec.mainClass="funngames.App"
+
+
+REM =============================
+REM Run unit tests. 
+REM =============================
+REM mvn test
+mvn -q -Dtest=AppTest test
 
 ECHO.
 pause
